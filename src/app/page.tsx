@@ -1,7 +1,19 @@
+import { Contact } from "@/components/home/Contact";
+import { Header } from "@/components/home/Header";
+import { Resources } from "@/components/home/Resources";
+import { Services } from "@/components/home/Services";
+import { Team } from "@/components/home/Team";
+import { Navbar } from "@/components/Navbar";
+
 export default function Home() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello Isa! Se lavó el pelo?
-    </h1>
+    <>
+      <Navbar />
+      <Header />
+      <Team />
+      <Services />
+      <Contact />
+      <Resources />
+    </>
   );
 }
