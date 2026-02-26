@@ -1,6 +1,9 @@
 export const LINKS = {
-  Equipo: "#team",
   Servicios: "#services",
+  Proceso: "#process",
+  Nosotros: "#Us",
   Contacto: "#contact",
-  Recursos: "#resources",
 };
+
+export const primaryColor = "#7430e8";
+export const mutedForeground = "#8f96a3";
