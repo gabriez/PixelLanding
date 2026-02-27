@@ -4,6 +4,3 @@ export const LINKS = {
   Nosotros: "#Us",
   Contacto: "#contact",
 };
-
-export const primaryColor = "#7430e8";
-export const mutedForeground = "#8f96a3";
