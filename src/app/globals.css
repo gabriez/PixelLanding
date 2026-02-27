@@ -47,7 +47,6 @@ a {
   background-color: var(--primary-color);
   border-radius: 12px;
   border: 1px solid var(--primary-color);
-  padding: 12px 20px;
   color: white;
   font-family: var(--font-plus-jakarta-sans);
   box-shadow: 0 0 40px 4px var(--primary-color);
