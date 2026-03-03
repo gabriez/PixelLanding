@@ -14,3 +14,13 @@ export type ServicesPresenceRenderData = {
 export type ServicesCard = {
   card: ServicesRenderCard;
 };
+
+export type AgencyProps = {
+  id: string;
+  icon: LucideIcon;
+  description: string;
+};
+
+export type AgencyCardRender = {
+  agencyCard: AgencyProps;
+};

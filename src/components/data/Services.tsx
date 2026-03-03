@@ -1,4 +1,5 @@
 import {
+  AgencyProps,
   ServicesPresenceRenderData,
   ServicesRenderCard,
 } from "@/types/Services";
@@ -8,6 +9,10 @@ import {
   ChartNoAxesColumnIncreasing,
   Brush,
   Cpu,
+  DiamondPlus,
+  Users,
+  TrendingUp,
+  LockKeyhole,
 } from "lucide-react";
 
 export const servicesPresenceData: ServicesPresenceRenderData[] = [
@@ -72,5 +77,28 @@ export const servicesCardData: ServicesRenderCard[] = [
     icon: Cpu,
     title: "Web3 & Tecnología Avanzada",
     description: "Soluciones innovadoras con blockchain, IA y automatización.",
+  },
+];
+
+export const agencyData: AgencyProps[] = [
+  {
+    id: crypto.randomUUID(),
+    icon: DiamondPlus,
+    description: "Enfoque 100% en resultados y ROI medible",
+  },
+  {
+    id: crypto.randomUUID(),
+    icon: Users,
+    description: "Trabajamos como socios estratégicos de tu negocio",
+  },
+  {
+    id: crypto.randomUUID(),
+    icon: TrendingUp,
+    description: "Metodología probada de crecimiento digital.",
+  },
+  {
+    id: crypto.randomUUID(),
+    icon: LockKeyhole,
+    description: "Transparencia total y comunicación constante.",
   },
 ];

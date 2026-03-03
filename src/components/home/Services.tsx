@@ -1,7 +1,11 @@
-import { ServicesCard } from "@/types/Services";
+import { AgencyCardRender, ServicesCard } from "@/types/Services";
 import { IconView } from "../common/IconView";
-import { servicesCardData, servicesPresenceData } from "../data/Services";
-import { X, Check, LucideProps } from "lucide-react";
+import {
+  servicesCardData,
+  servicesPresenceData,
+  agencyData,
+} from "../data/Services";
+import { X, Check } from "lucide-react";
 
 const iconClass = "w-8.5 h-8.5 shrink-0";
 
@@ -26,6 +30,20 @@ const Card = ({ card }: ServicesCard) => (
   </div>
 );
 
+const AgencyCard = ({ agencyCard }: AgencyCardRender) => (
+  <div
+    key={agencyCard.id}
+    className="bg-[#181B25] p-5 flex items-center gap-4 rounded-2xl"
+  >
+    <div className="bg-[#241F3B] p-2 rounded-2xl shrink-0 w-fit h-fit">
+      <IconView icon={agencyCard.icon} className="w-8 h-8 text-purple-500" />
+    </div>
+    <div>
+      <h4 className="text-white font-bold">{agencyCard.description}</h4>
+    </div>
+  </div>
+);
+
 export const Services = () => {
   return (
     <section
@@ -33,7 +51,7 @@ export const Services = () => {
       id="services"
     >
       <article>
-        <h1 className="text-center pt-17 text-4xl font-semibold px-4">
+        <h1 className="text-center pt-17 text-3xl  md:text-4xl font-semibold px-4">
           <span className="text-white">Tu negocio merece más</span>
           <span className="bg-linear-to-r from-[#6D34E6] to-[#4678F2] bg-clip-text text-transparent pl-2">
             que presencia digital
@@ -68,16 +86,14 @@ export const Services = () => {
       </article>
 
       {/* Services marketing */}
-      <section className=" pt-20 pb-15 bg-linear-to-r from-[#18083A] from-[28.57%] via-[#090820] via-[48.68%] to-[#0C1019] to-[66.75%]">
+      <section className=" pt-20 pb-5 md:pb-10 bg-linear-to-r from-[#18083A] from-[28.57%] via-[#090820] via-[48.68%] to-[#0C1019] to-[66.75%]">
         <div>
-          <h1 className="text-center pt-17 sm:text-3xl md:text-4xl px-4 font-semibold ">
+          <h1 className="text-center pt-17 text-3xl md:text-4xl px-4 font-semibold ">
             <span className="text-white">Servicios de</span>
-            <span className="bg-linear-to-r from-[#6D34E6] to-[#4678F2] bg-clip-text text-transparent pl-2">
-              marketing digital
-            </span>
+            <span className="text-gradient pl-2">marketing digital</span>
             <span className="text-white pl-2">y desarrollo</span>
           </h1>
-          <h3 className="text-center text-gray-500 px-[15%] font-normal pt-1.5">
+          <h3 className="text-center text-gray-500 px-[15%] font-normal pt-5 md:pt-1.5">
             Todo lo que tu marca necesita para crecer, en un solo lugar.
           </h3>
         </div>
@@ -115,6 +131,27 @@ export const Services = () => {
           )}
         </div>
       </article>
+      {/* Agency Section */}
+      <section className="flex flex-col md:flex-row px-[10%] pt-37 pb-5 items-center gap-10 justify-center">
+        <article className="basis-1/2 shrink-0 mr-2 text-center md:text-left">
+          <h1 className="text-4xl text-white font-bold">
+            No somos una <span className="text-gradient">agencia más</span>
+          </h1>
+          <p className="w-full md:w-[80%] text-[#7E96A3] pt-2 font-medium">
+            En Pixel combinamos visión estratégica, creatividad y tecnología
+            para construir marcas que impactan. No ejecutamos tareas: diseñamos
+            caminos de crecimiento.
+          </p>
+        </article>
+
+        <article className="w-full md:w-auto">
+          <div className="flex flex-col flex-1 gap-4">
+            {agencyData.map((item) => (
+              <AgencyCard key={item.id} agencyCard={item} />
+            ))}
+          </div>
+        </article>
+      </section>
     </section>
   );
 };
