@@ -29,7 +29,7 @@ export const NavbarMobile = () => {
         {Object.entries(LINKS).map(([name, href]) => (
           <Link
             key={name}
-            href={href}
+            href={"#" + href}
             onClick={handleOpen}
             className={`text-(--muted-foreground) hover:text-(--primary-color) mx-4 py-6 transition-colors font-medium font-(--font-plus-jakarta-sans)`}
           >

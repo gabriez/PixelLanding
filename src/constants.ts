@@ -1,6 +1,6 @@
 export const LINKS = {
-  Servicios: "#services",
-  Proceso: "#process",
-  Nosotros: "#Us",
-  Contacto: "#contact",
+  Servicios: "services",
+  Proceso: "process",
+  Nosotros: "Us",
+  Contacto: "contact",
 };

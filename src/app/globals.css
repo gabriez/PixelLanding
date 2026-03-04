@@ -53,8 +53,8 @@ a {
   border: 1px solid var(--primary-color);
   color: white;
   font-family: var(--font-plus-jakarta-sans);
-  box-shadow: 0 0 40px 4px var(--primary-color);
-  animation: shimmer-button 200ms infinite 0s alternate;
+  /* box-shadow: 0 0 40px 2px var(--primary-color); */
+  animation: shimmer-button 480ms infinite 0s ease-in-out;
   transition: transform 0.3s ease;
 }
 
@@ -64,13 +64,10 @@ a {
 
 @keyframes shimmer-button {
   0% {
-    box-shadow: 0 0 40px 2px var(--primary-color);
+    box-shadow: 0 0 20px #7430e84d;
   }
-  /* 50% {
-    box-shadow: 0 0 40px 8px var(--primary-color);
-  } */
   100% {
-    box-shadow: 0 0 40px 6px var(--primary-color);
+    box-shadow: 0 0 40px #7430e899;
   }
 }
 

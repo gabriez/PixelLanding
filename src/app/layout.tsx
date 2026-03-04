@@ -67,7 +67,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${axiforma.className} ${plusJakartaSans.variable}`}
+        className={`${geistSans.variable} ${geistMono.variable} ${plusJakartaSans.variable} ${axiforma.className} `}
       >
         {children}
       </body>
