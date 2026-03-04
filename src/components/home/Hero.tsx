@@ -4,7 +4,7 @@ export const Hero = () => {
   return (
     <div
       id="hero"
-      className="pt-40 pb-96 flex flex-col items-start justify-start px-10 gap-4  bg-linear-[140deg] from-[#1D0843] from-[28.57%] via-[#09061D] via-[48.68%] to-[#0C1830] to-[66.75%]"
+      className="pt-40 pb-32 flex flex-col items-start justify-start px-10 gap-4  bg-linear-[140deg] from-[#1D0843] from-[28.57%] via-[#09061D] via-[48.68%] to-[#0C1830] to-[66.75%]"
     >
       <div
         className={`flex items-center  border border-(--primary-color)/20 bg-(--primary-color)/10 rounded-full px-4 py-2.5 text-sm 2xl:text-base font-medium`}

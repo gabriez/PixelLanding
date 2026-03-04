@@ -3,10 +3,7 @@ import { processData } from "../data/Process";
 
 export const Process = () => {
   return (
-    <section
-      id="process"
-      className="bg-linear-to-r from-[#18083A] from-[28.57%] via-[#090820] via-[48.68%] to-[#0C1019] to-[66.75%] py-20"
-    >
+    <section id="process" className="radial-background py-20">
       <article>
         <h2 className="text-center text-4xl font-bold text-white">
           Nuestro <span className="text-gradient">proceso</span> de trabajo

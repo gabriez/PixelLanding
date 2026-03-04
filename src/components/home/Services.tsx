@@ -6,6 +6,7 @@ import {
   agencyData,
 } from "../data/Services";
 import { X, Check } from "lucide-react";
+import { LINKS } from "@/constants";
 
 const iconClass = "w-8.5 h-8.5 shrink-0";
 
@@ -46,18 +47,15 @@ const AgencyCard = ({ agencyCard }: AgencyCardRender) => (
 
 export const Services = () => {
   return (
-    <section
-      className="min-h-screen pt-20 pb-25 bg-linear-to-r from-[#18083A] from-[28.57%] via-[#090820] via-[48.68%] to-[#0C1019] to-[66.75%]"
-      id="services"
-    >
+    <section className="radial-background pt-20 pb-25" id={LINKS.Servicios}>
       <article>
         <h1 className="text-center pt-17 text-3xl  md:text-4xl font-semibold px-4">
           <span className="text-white">Tu negocio merece más</span>
-          <span className="bg-linear-to-r from-[#6D34E6] to-[#4678F2] bg-clip-text text-transparent pl-2">
+          <span className="text-gradient bg-clip-text text-transparent pl-2">
             que presencia digital
           </span>
         </h1>
-        <h3 className="text-center text-gray-500 px-[15%] font-normal pt-1.5">
+        <h3 className="text-center text-(--muted-foreground) px-[15%] font-normal pt-1.5">
           Muchas empresas invierten en digital sin ver resultados. Nosotros
           cambiamos eso con estrategia, diseño y tecnología que funcionan.
         </h3>
@@ -86,7 +84,7 @@ export const Services = () => {
       </article>
 
       {/* Services marketing */}
-      <section className=" pt-20 pb-5 md:pb-10 bg-linear-to-r from-[#18083A] from-[28.57%] via-[#090820] via-[48.68%] to-[#0C1019] to-[66.75%]">
+      <section className=" pt-20 pb-5 md:pb-10 ">
         <div>
           <h1 className="text-center pt-17 text-3xl md:text-4xl px-4 font-semibold ">
             <span className="text-white">Servicios de</span>
