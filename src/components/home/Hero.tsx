@@ -17,10 +17,10 @@ export const Hero = () => {
         Impulsamos marcas con diseño, tecnología y marketing que{" "}
         <span className="text-gradient"> convierten</span>
       </h1>
-      <span className="block w-fit md:w-3xl text-(--muted-foreground) text-lg 2xl:text-2xl font-medium">
+      <p className="block w-fit md:w-3xl text-(--muted-foreground) text-lg 2xl:text-2xl font-medium">
         En Pixel Agencia Creativa transformamos ideas en experiencias digitales
         que generan resultados reales.
-      </span>
+      </p>
       <HeroButtons />
     </div>
   );

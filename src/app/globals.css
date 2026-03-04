@@ -7,13 +7,17 @@ body {
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  background: hsl(230 25% 7%);
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --muted-foreground: #8f96a3;
   --primary-color: #7430e8;
+  --gradient-card: linear-gradient(
+    145deg,
+    hsl(230, 20%, 14%),
+    hsl(230, 20%, 10%)
+  );
 }
 
 a {
@@ -70,15 +74,10 @@ a {
   }
 }
 
-/* .schedule-assesory::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;  border-radius: 12px;
-  transform: translateY(-50%);
-  width: 100%;
-  height: 100%;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 10px solid var(--primary-color);
-} */
+.radial-background {
+  background: radial-gradient(
+    ellipse at 50% 0%,
+    hsl(262, 80%, 55%, 0.15) -10%,
+    transparent 50%
+  );
+}

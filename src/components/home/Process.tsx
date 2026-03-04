@@ -8,9 +8,9 @@ export const Process = () => {
       className="bg-linear-to-r from-[#18083A] from-[28.57%] via-[#090820] via-[48.68%] to-[#0C1019] to-[66.75%] py-20"
     >
       <article>
-        <h1 className="text-center text-4xl font-bold text-white">
+        <h2 className="text-center text-4xl font-bold text-white">
           Nuestro <span className="text-gradient">proceso</span> de trabajo
-        </h1>
+        </h2>
         <p className="text-center text-sm text-[#7E96A3] pt-4">
           Un método claro y eficiente que garantiza resultados en cada etapa.
         </p>

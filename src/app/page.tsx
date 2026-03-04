@@ -4,6 +4,7 @@ import { Resources } from "@/components/home/Resources";
 import { Services } from "@/components/home/Services";
 import { Process } from "@/components/home/Process";
 import { Navbar } from "@/components/Navbar";
+import { BrandsTrust } from "@/components/home/BrandsTrust";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero />
       <Services />
       <Process />
+      <BrandsTrust />
       <Contact />
       <Resources />
     </>
