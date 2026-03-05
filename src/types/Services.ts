@@ -13,6 +13,7 @@ export type ServicesPresenceRenderData = {
 
 export type ServicesCard = {
   card: ServicesRenderCard;
+  index: number;
 };
 
 export type AgencyProps = {

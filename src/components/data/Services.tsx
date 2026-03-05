@@ -6,13 +6,13 @@ import {
 import {
   Palette,
   CodeXml,
-  ChartNoAxesColumnIncreasing,
   Brush,
   Cpu,
-  DiamondPlus,
   Users,
   TrendingUp,
-  LockKeyhole,
+  Target,
+  Shield,
+  BarChart3,
 } from "lucide-react";
 
 export const servicesPresenceData: ServicesPresenceRenderData[] = [
@@ -61,7 +61,7 @@ export const servicesCardData: ServicesRenderCard[] = [
   },
   {
     id: crypto.randomUUID(),
-    icon: ChartNoAxesColumnIncreasing,
+    icon: BarChart3,
     title: "Marketing Digital & Performance",
     description:
       "Leads cualificados, campañas y funnels que generan resultados.",
@@ -83,7 +83,7 @@ export const servicesCardData: ServicesRenderCard[] = [
 export const agencyData: AgencyProps[] = [
   {
     id: crypto.randomUUID(),
-    icon: DiamondPlus,
+    icon: Target,
     description: "Enfoque 100% en resultados y ROI medible",
   },
   {
@@ -98,7 +98,7 @@ export const agencyData: AgencyProps[] = [
   },
   {
     id: crypto.randomUUID(),
-    icon: LockKeyhole,
+    icon: Shield,
     description: "Transparencia total y comunicación constante.",
   },
 ];

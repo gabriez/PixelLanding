@@ -12,7 +12,7 @@ export const processData: ProcessDataProps[] = [
   {
     id: crypto.randomUUID(),
     icon: Lightbulb,
-    title: "Estrategia & Planificación",
+    title: "Estrategia",
     description:
       "Diseñamos un plan personalizado con objetivos claros y medibles,",
   },
