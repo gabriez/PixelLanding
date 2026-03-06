@@ -1,6 +1,7 @@
 import { Star } from "lucide-react";
 import { BrandsCardsData } from "../data/Brands";
 import { BrandCard } from "./BrandCard";
+import { motion } from "framer-motion";
 
 export const BrandsTrust = () => {
   return (
