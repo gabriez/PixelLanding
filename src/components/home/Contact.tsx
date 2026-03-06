@@ -29,7 +29,9 @@ export const Contact = () => {
           Agenda una asesoría gratuita y descubrí cómo podemos transformar tu
           presencia digital en resultados reales para tu negocio.
         </p>
-        <ScheduleButton />
+        <div className="mx-auto max-w-sm w-full">
+          <ScheduleButton />
+        </div>
       </motion.div>
     </section>
   );
