@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Geist, Geist_Mono, Plus_Jakarta_Sans } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 
@@ -11,50 +11,49 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
-const plusJakartaSans = Plus_Jakarta_Sans({
-  variable: "--font-plus-jakarta-sans",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
+const plusJakartaSans = localFont({
+  src: [
+    {
+      path: "./Plus_Jakarta_Sans/static/PlusJakartaSans-ExtraLight.ttf",
+      weight: "200",
+      style: "normal",
+    },
+    {
+      path: "./Plus_Jakarta_Sans/static/PlusJakartaSans-Light.ttf",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "./Plus_Jakarta_Sans/static/PlusJakartaSans-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./Plus_Jakarta_Sans/static/PlusJakartaSans-Medium.ttf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "./Plus_Jakarta_Sans/static/PlusJakartaSans-SemiBold.ttf",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "./Plus_Jakarta_Sans/static/PlusJakartaSans-Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "./Plus_Jakarta_Sans/static/PlusJakartaSans-ExtraBold.ttf",
+      weight: "800",
+      style: "normal",
+    },
+  ],
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
-});
-
-const axiforma = localFont({
-  src: [
-    {
-      path: "./axiforma/Axiforma_Regular.ttf",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "./axiforma/Axiforma_Light.ttf",
-      weight: "300",
-      style: "normal",
-    },
-    {
-      path: "./axiforma/Axiforma_Medium.ttf",
-      weight: "500",
-      style: "normal",
-    },
-    {
-      path: "./axiforma/Axiforma-Black.ttf",
-      weight: "600",
-      style: "normal",
-    },
-    {
-      path: "./axiforma/Axiforma-Heavy.ttf",
-      weight: "700",
-      style: "normal",
-    },
-    {
-      path: "./axiforma/Axiforma-Thin.ttf",
-      weight: "200",
-      style: "normal",
-    },
-  ],
 });
 
 export const metadata: Metadata = {
@@ -70,7 +69,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${plusJakartaSans.variable} ${axiforma.className} `}
+        className={`${geistSans.variable} ${geistMono.variable} ${plusJakartaSans.className}`}
       >
         <Navbar />
 

@@ -11,7 +11,7 @@ export const Hero = () => {
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2 }}
+        transition={{ delay: 0.05, duration: 0.5 }}
         viewport={{ amount: 0.15, once: true }}
         className="flex flex-col items-start justify-start gap-4 "
       >
@@ -22,7 +22,7 @@ export const Hero = () => {
             🚀 Agencia de Marketing Digital
           </span>
         </div>
-        <h1 className=" text-white font-(--font-plus-jakarta-sans) font-[600] w-fit md:w-3xl lg:w-4xl 2xl:w-5xl text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl leading-tight mb-2">
+        <h1 className=" text-white font-extrabold w-fit md:w-3xl lg:w-4xl 2xl:w-5xl text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl leading-10 lg:leading-16 mb-2">
           Impulsamos marcas con diseño, tecnología y marketing que{" "}
           <span className="text-gradient"> convierten</span>
         </h1>
